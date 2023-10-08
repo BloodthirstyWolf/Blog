@@ -1,31 +1,34 @@
-body {
-    background-color: #fff;
-    font-family: Arial, sans-serif;
+bbody {
+    background-color: #ffffff;
+    color: #000000; /* Добавим черный цвет текста на всей странице */
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     margin: 20px auto;
-    max-width: 1200px;
+    padding: 20px;
+    max-width: 800px;
+    color: #000000; /* Добавим черный цвет текста в контейнерах */
 }
 
 header {
     background-color: #9F2B68;
-    color: #fff;
+    color: #ffffff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 0;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 36px;
+    color: #ffffff; /* Цвет текста для заголовка в шапке */
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -34,41 +37,27 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li:last-child {
-    margin-right: 0;
-}
-
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: bold;
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 20px 0;
 }
 
 section {
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 20px;
     margin-bottom: 20px;
-    width: 48%; /* Чтобы два контейнера влезли на один экран */
 }
 
-section h2 {
+h2 {
     color: #9F2B68;
-}
-
-aside {
-    flex-basis: 30%; /* Ширина правой боковой колонки */
 }
 
 footer {
     background-color: #9F2B68;
-    color: #fff;
-    text-align: center;
+    color: #ffffff;
     padding: 10px 0;
+    text-align: center;
 }
