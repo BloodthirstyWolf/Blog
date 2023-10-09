@@ -1,30 +1,29 @@
-bbody {
-    background-color: #ffffff;
-    color: #000000; /* Добавим черный цвет текста на всей странице */
+body {
+    background-color: #F5F5F5; /* Очень светлый серый фон */
+    color: #333; /* Черный цвет текста */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 .container {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Белый контейнер */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
-    color: #000000; /* Добавим черный цвет текста в контейнерах */
+    color: #333; /* Черный цвет текста в контейнерах */
 }
 
 header {
-    background-color: #9F2B68;
-    color: #ffffff;
+    background-color: #333; /* Темно-серый цвет для шапки */
+    color: #ffffff; /* Белый цвет текста в шапке */
     padding: 10px 0;
     text-align: center;
 }
 
 header h1 {
     font-size: 36px;
-    color: #ffffff; /* Цвет текста для заголовка в шапке */
 }
 
 nav ul {
@@ -39,8 +38,17 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
     font-weight: bold;
+}
+
+/* Цвет ссылок в навигационном меню */
+nav ul li a {
+    color: #ffffff; /* Белые ссылки в навигационном меню */
+}
+
+/* Цвет ссылок в навигационном меню при наведении */
+nav ul li a:hover {
+    color: #9F2B68; /* Цвет ссылок при наведении */
 }
 
 main {
@@ -49,15 +57,19 @@ main {
 
 section {
     margin-bottom: 20px;
+    background-color: #fff; /* Белый фон для секций */
+    padding: 20px;
+    border-radius: 5px; /* Закругленные углы для секций */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для секций */
 }
 
 h2 {
-    color: #9F2B68;
+    color: #9F2B68; /* Цвет заголовков */
 }
 
 footer {
-    background-color: #9F2B68;
-    color: #ffffff;
+    background-color: #333; /* Темно-серый цвет для подвала */
+    color: #ffffff; /* Белый цвет текста в подвале */
     padding: 10px 0;
     text-align: center;
 }
