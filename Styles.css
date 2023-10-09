@@ -1,23 +1,23 @@
 body {
-    background-color: #F5F5F5; /* Очень светлый серый фон */
-    color: #333; /* Черный цвет текста */
+    background-color: #f4f4f4; /* Светлый фон */
+    color: #333; /* Цвет текста */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 .container {
-    background-color: #ffffff; /* Белый контейнер */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Фон контейнера */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
-    color: #333; /* Черный цвет текста в контейнерах */
+    color: #333;
 }
 
 header {
-    background-color: #333; /* Темно-серый цвет для шапки */
-    color: #ffffff; /* Белый цвет текста в шапке */
+    background-color: #9F2B68; /* Цвет шапки */
+    color: #ffffff; /* Цвет текста в шапке */
     padding: 10px 0;
     text-align: center;
 }
@@ -39,14 +39,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
+    color: #333; /* Цвет ссылок в навигационном меню */
 }
 
-/* Цвет ссылок в навигационном меню */
-nav ul li a {
-    color: #ffffff; /* Белые ссылки в навигационном меню */
-}
-
-/* Цвет ссылок в навигационном меню при наведении */
 nav ul li a:hover {
     color: #9F2B68; /* Цвет ссылок при наведении */
 }
@@ -57,19 +52,19 @@ main {
 
 section {
     margin-bottom: 20px;
-    background-color: #fff; /* Белый фон для секций */
+    background-color: #f9f9f9; /* Фон секций */
     padding: 20px;
-    border-radius: 5px; /* Закругленные углы для секций */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для секций */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #9F2B68; /* Цвет заголовков */
+    color: #9F2B68;
 }
 
 footer {
-    background-color: #333; /* Темно-серый цвет для подвала */
-    color: #ffffff; /* Белый цвет текста в подвале */
+    background-color: #9F2B68;
+    color: #ffffff;
     padding: 10px 0;
     text-align: center;
 }
