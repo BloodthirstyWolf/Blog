@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Gab</title>
-    <link rel="stylesheet" href="Styles.css">
+    <title>Название вашего блога</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        header {
+            background-color: #000;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        header button {
+            background-color: #000;
+            color: #F70BF3;
+            border: 2px solid #F70BF3;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        header button:hover {
+            background-color: #F70BF3;
+            color: #000;
+        }
+
+        .about-container {
+            width: 50%;
+            background-color: #000;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .about-text {
+            color: #F70BF3;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Добро пожаловать! </h1>
-            <a href="#" class="button">Уроки</a> <a href="#" class="button">Блог</a> <a href="#" class="button">Контакты</a>
-
+    <div class="container">
+        <header>
+            <button class="header-button">Главная</button>
+            <button class="header-button">Категория 1</button>
+            <button class="header-button">Категория 2</button>
+        </header>
+        <div class="about-container">
+            <p class="about-text">О нас</p>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <section>
-                <h2>Последние посты</h2>
-                <!-- Здесь можно разместить список последних статей с ссылками на них -->
-            </section>
-
-            <section>
-                <h2>Популярные статьи</h2>
-                <!-- Здесь можно разместить список популярных статей с ссылками на них -->
-            </section>
-        </div>
-        
-        <div class="container">
-            <section>
-                <h2>Обратная связь</h2>
-                <p>Если у вас есть вопросы или комментарии, не стесняйтесь связаться с нами:</p>
-                <ul>
-                    <li><a href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a href="tel:+123456789">+1 (234) 567-89</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Следите за нами в социальных сетях</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/YourBlog" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/YourBlog" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/YourBlog" target="_blank">Instagram</a></li>
-                </ul>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; Год, Название Вашего блога. Все права защищены.</p>
-        </div>
-    </footer>
-</body>
-</html>
+    </
