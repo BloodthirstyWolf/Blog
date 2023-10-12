@@ -32,19 +32,16 @@ nav {
     background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
     background-size: cover;
     height: 100vh;
-    margin: 0; /* Добавьте эту строку для удаления отступа по умолчанию */
+    margin: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-}
-
 .about-text {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000; /* Изменим цвет фона на черный */
     color: #F70BF3;
     padding: 20px;
     border-radius: 20px;
     max-width: 50%;
-    text-align: center;
+    text-align: left; /* Изменим выравнивание текста на левое */
 }
