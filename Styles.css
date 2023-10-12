@@ -28,13 +28,15 @@ a {
 
 
 .button {
+  background-color: #FEE8FD;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #FEE8FD; /* Цвет фона кнопки */
-  color: black; /* Цвет текста на кнопке */
+  padding: 10px 20px; /* Регулируйте размер кнопки при необходимости */
+  border: none;
+  border-radius: 5px; /* Округлые углы, если нужно */
+  color: #000; /* Цвет текста на кнопке, можно изменить */
   text-align: center;
   text-decoration: none;
-  border-radius: 4px; /* Закругленные углы */
-  box-shadow: 2px 2px 4px #888888; /* Тень */
-}
+  font-size: 16px; /* Размер шрифта, подберите под свои нужды */
+  margin: 5px; /* Отступ между кнопками */
+  cursor: pointer;
 }
