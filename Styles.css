@@ -1,66 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название вашего блога</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+.about-container {
+    position: relative;
+}
 
-        .container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-        }
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Подгоняет изображение под размер контейнера, сохраняя пропорции */
+}
 
-        header {
-            background-color: #000;
-            width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        header button {
-            background-color: #000;
-            color: #F70BF3;
-            border: 2px solid #F70BF3;
-            padding: 10px 20px;
-            border-radius: 10px;
-        }
-
-        header button:hover {
-            background-color: #F70BF3;
-            color: #000;
-        }
-
-        .about-container {
-    width: 50%;
-    background-image: url('https://im.wampi.ru/2023/10/12/IMG_20231012_213647.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 20px;
-    padding: 20px;
-        }
-
-        .about-text {
-            color: #F70BF3;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <button class="header-button">Главная</button>
-            <button class="header-button">Категория 1</button>
-            <button class="header-button">Категория 2</button>
-        </header>
-        <div class="about-container">
-            <p class="about-text">О нас</p>
-        </div>
-    </
+.about-text {
+    color: #F70BF3;
+    z-index: 2; /* Помещаем текст поверх изображения */
+}
