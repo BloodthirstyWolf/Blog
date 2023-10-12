@@ -1,12 +1,27 @@
-/* Стилизация хедера */
+/* Стиль для хедера */
 header {
     background-image: url("https://im.wampi.ru/2023/10/12/BEZ-NAZVANIY23_20231010184428.png");
     background-size: cover;
-    height: 0;
-    padding-top: 56.25%; /* 16:9 пропорции, если изображение исходно 1920x1080 */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
 }
 
-/* Стилизация цвета фона страницы */
+/* Стиль для цвета фона страницы */
 body {
     background-color: #005FFE;
+}
+
+/* Дополнительные стили, чтобы убрать дефолтное отступы у ul и убрать подчеркивание у ссылок */
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
