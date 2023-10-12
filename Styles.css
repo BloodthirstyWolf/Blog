@@ -14,19 +14,6 @@ nav {
     display: flex;
 }
 
-.header-button {
-    background-color: #000;
-    color: #F70BF3;
-    border: 2px solid #F70BF3;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-.header-button:hover {
-    background-color: #F70BF3;
-    color: #000;
-}
 
 .about-container {
     background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
@@ -45,3 +32,26 @@ nav {
     max-width: 50%;
     text-align: left; /* Изменим выравнивание текста на левое */
 }
+
+
+header {
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header-button {
+    background-color: #000;
+    color: #F70BF3;
+    border: 2px solid #F70BF3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.header-button:hover {
+    background-color: #F70BF3;
+    color: #000;
+}
+
