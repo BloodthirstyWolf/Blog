@@ -1,67 +1,12 @@
-body {
-    background-color: #005FFE; /* Светло-серый фон */
-    color: #333333; /* Черный текст */
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    background-color: #ffffff; /* Белый фон контейнера */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    color: #333333; /* Черный текст в контейнерах */
-}
-
+/* Стилизация хедера */
 header {
-    background-image: url 'https://im.wampi.ru/2023/10/12/BEZ-NAZVANIY23_20231010184428.png';
-    color: #ffffff; /* Белый текст в шапке */
-    padding: 10px 0;
-    text-align: center;
+    background-image: url("https://im.wampi.ru/2023/10/12/BEZ-NAZVANIY23_20231010184428.png");
+    background-size: cover;
+    height: 0;
+    padding-top: 56.25%; /* 16:9 пропорции, если изображение исходно 1920x1080 */
 }
 
-header h1 {
-    font-size: 36px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #1e90ff; /* Ярко-синие ссылки в навигационном меню */
-}
-
-/* Цвет ссылок в навигационном меню при наведении */
-nav ul li a:hover {
-    color: #333333; /* Черные ссылки при наведении */
-}
-
-main {
-    padding: 20px 0;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #1e90ff; /* Ярко-синие заголовки разделов */
-}
-
-footer {
-    background-color: #1e90ff; /* Ярко-синий фон подвала */
-    color: #ffffff; /* Белый текст в подвале */
-    padding: 10px 0;
-    text-align: center;
+/* Стилизация цвета фона страницы */
+body {
+    background-color: #005FFE;
 }
