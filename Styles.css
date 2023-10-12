@@ -26,15 +26,14 @@ a {
     color: inherit;
 }
 
-/* Стили для всех ссылок */
-a {
-    background-color: #FEE8FD; /* Белый фон */
-    border-radius: 5px; /* Скругления по краям */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
-    padding: 10px 20px; /* Размер кнопки */
-    color: #1e90ff; /* Цвет текста кнопки */
-    text-decoration: none; /* Убираем подчеркивание ссылок */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Плавные анимации при наведении */
-    display: inline-block; /* Располагаем ссылки горизонтально */
-    margin-right: 10px; /* Добавляем небольшой отступ между ссылками */
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FEE8FD; /* Цвет фона кнопки */
+  color: white; /* Цвет текста на кнопке */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px; /* Закругленные углы */
+  box-shadow: 2px 2px 4px #888888; /* Тень */
 }
