@@ -32,9 +32,12 @@ nav {
     background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
     background-size: cover;
     height: 100vh;
+    margin: 0; /* Добавьте эту строку для удаления отступа по умолчанию */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
 }
 
 .about-text {
