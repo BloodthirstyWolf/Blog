@@ -25,3 +25,19 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Стили для кнопок (ссылок) */
+nav ul li a {
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 5px; /* Скругления по краям */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+    padding: 10px 20px; /* Размер кнопки */
+    color: #1e90ff; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Плавные анимации при наведении */
+}
+
+nav ul li a:hover {
+    background-color: #1e90ff; /* Изменение фона при наведении */
+    color: #ffffff; /* Изменение цвета текста при наведении */
+}
