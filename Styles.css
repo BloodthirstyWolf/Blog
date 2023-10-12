@@ -9,7 +9,7 @@ header {
 
 /* Стиль для цвета фона страницы */
 body {
-    background-color: #005FFE;
+    background-color: #5FB5FF;
 }
 
 /* Дополнительные стили, чтобы убрать дефолтное отступы у ul и убрать подчеркивание у ссылок */
@@ -35,9 +35,4 @@ a {
     color: #1e90ff; /* Цвет текста кнопки */
     text-decoration: none; /* Убираем подчеркивание ссылок */
     transition: background-color 0.3s, box-shadow 0.3s; /* Плавные анимации при наведении */
-}
-
-a:hover {
-    background-color: #1e90ff; /* Изменение фона при наведении */
-    color: #ffffff; /* Изменение цвета текста при наведении */
 }
