@@ -14,13 +14,7 @@
             background-position: center;
             position: relative;
             display: flex;
-        }
-
-        .left-section {
-            background: black;
-            border-radius: 15px;
-            padding: 20px;
-            color: #F70BF3;
+            flex-direction: column;
         }
 
         .sticky-header {
@@ -41,18 +35,25 @@
             margin: 0 10px;
             border-radius: 5px;
         }
+
+        .left-section {
+            background: black;
+            border-radius: 15px;
+            padding: 20px;
+            color: #F70BF3;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="left-section">
-            <h2>О нас</h2>
-            <p>Описание сайта</p>
-        </div>
         <div class="sticky-header">
             <button class="button">Кнопка 1</button>
             <button class="button">Кнопка 2</button>
             <button class="button">Кнопка 3</button>
+        </div>
+        <div class="left-section">
+            <h2>О нас</h2>
+            <p>Описание сайта</p>
         </div>
         <!-- Здесь ваш контент блога -->
     </div>
