@@ -3,22 +3,28 @@
 <head>
     <style>
         html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
-            width: 100%;
-            overflow-x: hidden;
         }
 
-        .container {
+        .container-first {
             position: relative;
             width: 100%;
             box-sizing: border-box;
         }
 
-        .container:first-child {
-            background: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png') no-repeat center center fixed;
+        .container-first {
+            background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
             background-size: cover;
             height: 100vh;
+        }
+
+        .container-second {
+            background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
+            background-size: cover;
+            height: 100vh;
+            margin: 0; /* Убираем отрицательный отступ */
         }
 
         .sticky-header {
@@ -26,7 +32,7 @@
             top: 0;
             background: black;
             display: flex;
-            justify-content: space-between;
+            justify-content: space between;
             align-items: center;
             padding: 10px;
         }
@@ -57,12 +63,6 @@
             text-align: center;
         }
 
-        .second-container {
-            background: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
-        }
-
         .centered-content {
             flex: 1;
             display: flex;
@@ -87,7 +87,7 @@
         <button class="button">Уроки</button>
         <button class="button">Контакты</button>
     </div>
-    <div class="container">
+    <div class="container-first">
         <div class="left-section">
             <div class="text-in-circle">
                 <h2>О нас</h2>
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-second">
         <div class="centered-content">
             <a href="#" class="article-link">Статья 1</a>
             <a href="#" class="article-link">Статья 2</a>
