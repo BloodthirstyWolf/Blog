@@ -14,6 +14,7 @@
             background-size: cover;
             position: relative;
             display: flex;
+            flex-direction: column;
         }
 
         .sticky-header {
@@ -37,7 +38,7 @@
 
         .left-section {
             width: 50%;
-            background: url('https://i.postimg.cc/3R4xNFNb/27-20231013161544.png') no-repeat;
+            background: url('https://im.wampi.ru/2023/10/13/BEZ-NAZVANIY27_20231013124339.png') no-repeat;
             background-size: contain;
             padding-bottom: 50%;
             position: relative;
@@ -51,22 +52,54 @@
             color: #F70BF3;
             text-align: center;
         }
+
+        .second-container {
+            height: 100vh;
+            background: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .centered-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .article-link {
+            background: #F70BF3;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="sticky-header">
-        <button class="button">Кнопка 1</button>
-        <button class="button">Кнопка 2</button>
-        <button class="button">Кнопка 3</button>
+        <button class="button">Блог</button>
+        <button class="button">Уроки</button>
+        <button class="button">Контакты</button>
     </div>
     <div class="container">
         <div class="left-section">
             <div class="text-in-circle">
                 <h2>О нас</h2>
-                <p> Сначала ИИ, потом нейросети, названия разные, а суть одна. Но что это такое, мы понимаем лишь поверхностно. А хотите? Легко, нужно лишь понять что такое линейная регрессия, кластеризация… не понятно? О, сейчас я обьясню….</p>
+                <p>Описание сайта</p>
             </div>
         </div>
         <!-- Здесь ваш контент блога -->
+    </div>
+    <div class="second-container">
+        <div class="centered-content">
+            <a href="#" class="article-link">Статья 1</a>
+            <a href="#" class="article-link">Статья 2</a>
+        </div>
     </div>
 </body>
 </html>
