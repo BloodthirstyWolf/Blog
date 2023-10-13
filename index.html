@@ -62,15 +62,25 @@
             align-items: center;
         }
 
-        .article-link {
-            background: #F70BF3;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px;
-            text-align: center;
-            text-decoration: none;
-        }
+        /* Стили для ссылок на статьи */
+.article-link {
+    display: flex;
+    align-items: center;
+    background: #111; /* Цвет фона - темный */
+    color: #F70BF3; /* Цвет текста - фиолетовый */
+    padding: 10px; /* Внутренние отступы */
+    border: 2px solid #F70BF3; /* Граница - фиолетовая */
+    border-radius: 5px; /* Скругление углов */
+    margin: 10px; /* Внешние отступы между ссылками */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.2s, color 0.2s; /* Плавные переходы при наведении */
+}
+
+.article-link:hover {
+    background: #F70BF3; /* Цвет фона при наведении - фиолетовый */
+    color: #111; /* Цвет текста при наведении - темный */
+}
+
 
         /* Медиа-запрос для десктопа (соотношение 9/16) */
 @media (min-width: 768px) {
