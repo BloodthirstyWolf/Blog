@@ -3,21 +3,24 @@
 <head>
     <style>
         html, body {
-            height: 100%;
             margin: 0;
             padding: 0;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         .container {
-            height: 100vh;
-            background: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png') no-repeat center center fixed;
-            background-size: cover;
-            background-attachment: fixed;
             position: relative;
-            display: flex;
-            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            height: 100vh;
+        }
+
+        .container:first-child {
+            background-image: url('https://i.yapx.ru/WNfLL.jpg');
+            background-size: cover;
         }
 
         .sticky-header {
@@ -55,54 +58,20 @@
             color: #F70BF3;
             text-align: center;
         }
-
-        .second-container {
-            height: 100vh;
-            background: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png') no-repeat center center fixed;
-            background-size: cover;
-            background-attachment: fixed;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            margin-top: -10px; /* Уменьшите или увеличьте отступ, чтобы точно сцепить контейнеры */
-        }
-
-        .centered-content {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .article-link {
-            background: #F70BF3;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px;
-            text-align: center;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
-    <div class="sticky-header">
-        <button class="button">Блог</button>
-        <button class="button">Уроки</button>
-        <button class="button">Контакты</button>
-    </div>
     <div class="container">
+        <div class="sticky-header">
+            <button class="button">Блог</button>
+            <button class="button">Уроки</button>
+            <button class="button">Контакты</button>
+        </div>
         <div class="left-section">
             <div class="text-in-circle">
                 <h2>О нас</h2>
                 <p>Сначала ИИ, потом нейросети, названия разные, а суть одна. Но что это такое, мы понимаем лишь поверхностно. А хотите? Легко, нужно лишь понять что такое линейная регрессия, кластеризация… не понятно? О, сейчас я обьясню…</p>
             </div>
-        </div>
-    </div>
-    <div class="second-container">
-        <div class="centered-content">
-            <a href="#" class="article-link">Статья 1</a>
-            <a href="#" class="article-link">Статья 2</a>
         </div>
     </div>
 </body>
