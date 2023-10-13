@@ -84,7 +84,7 @@
             content: "Описание статьи"; /* Текст для описания */
             background: #F70BF3; /* Розовый фон для описания */
             color: white; /* Белый цвет текста описания */
-            padding: 10px; /* Внутренние отступы для текста внутри круга */
+            padding: 10px; /* Внутренние отступы для описания */
             position: absolute;
             top: 100%; /* Расположение описания под ссылкой */
             left: 50%; /* Горизонтальное выравнивание описания по центру */
@@ -95,7 +95,7 @@
         }
 
         .article-link:hover::after {
-            opacity: 1; /* Появление описания при наведении на ссылку */
+            opacity: 1; /* Появление описания при наведении */
         }
 
         /* Медиа-запрос для десктопа (соотношение 9/16) */
@@ -113,21 +113,19 @@
         @media (max-width: 767px) {
             .container-first {
                 background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
-                background-size: cover;
+            }
+
+            .container-second {
+                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
             }
             .left-section {
-                width: 100%;
-                text-align: center;
-                padding: 0; /* Убираем внутренние отступы */
+                width: 100%; /* Занимает всю ширину первого контейнера */
+                text-align: center; /* Выравнивание текста по центру */
+                background-image: none; /* Убираем фоновое изображение в мобильной версии */
             }
             .text-in-circle {
-                position: relative;
-                border-radius: 50%;
-                background: rgba(247, 11, 243, 0.7);
-                padding: 20px;
-                color: white;
-                text-align: center;
-                margin: 0 auto;
+                left: 0; /* Расположение текста в левом верхнем углу */
+                transform: none; /* Сброс трансформации */
             }
         }
     </style>
@@ -135,7 +133,7 @@
 <body>
     <div class="sticky-header">
         <button class="button">Блог</button>
-        <button class="button">Уроки</button>
+        <button class "button">Уроки</button>
         <button class="button">Контакты</button>
     </div>
     <div class="container container-first">
