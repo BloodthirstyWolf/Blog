@@ -9,12 +9,15 @@
         }
 
         .container {
+            height: 100vh;
             background: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png') no-repeat center center fixed;
             background-size: cover;
             background-attachment: fixed;
             position: relative;
             display: flex;
             flex-direction: column;
+            margin: 0;
+            padding: 0;
         }
 
         .sticky-header {
@@ -54,12 +57,14 @@
         }
 
         .second-container {
+            height: 100vh;
             background: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png') no-repeat center center fixed;
             background-size: cover;
             background-attachment: fixed;
             position: relative;
             display: flex;
             flex-direction: column;
+            margin-top: -10px; /* Уменьшите или увеличьте отступ, чтобы точно сцепить контейнеры */
         }
 
         .centered-content {
@@ -83,7 +88,7 @@
 <body>
     <div class="sticky-header">
         <button class="button">Блог</button>
-        <button class "button">Уроки</button>
+        <button class="button">Уроки</button>
         <button class="button">Контакты</button>
     </div>
     <div class="container">
