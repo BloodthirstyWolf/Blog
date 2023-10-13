@@ -117,19 +117,21 @@
         background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
         background-size: cover;
     }
-
     .left-section {
-        width: 100%; /* Занимает всю ширину экрана */
+        width: 100%;
+        text-align: center;
+        padding: 0; /* Убираем внутренние отступы */
     }
-
     .text-in-circle {
-        left: 0; /* Расположение текста в левом верхнем углу */
-        transform: none; /* Сброс трансформации */
-        width: 100%; /* Ширина текста 100% экрана */
-        text-align: center; /* Выравнивание текста по центру */
-        padding: 10px; /* Добавляем отступы */
+        position: relative; /* Сброс абсолютной позиции */
+        border-radius: 50%; /* Создаем круг с помощью скругленных углов */
+        background: rgba(247, 11, 243, 0.7); /* Розовый фон с прозрачностью */
+        padding: 20px; /* Внутренние отступы для текста внутри круга */
+        color: white; /* Белый цвет текста внутри круга */
+        text-align: center;
+        margin: 0 auto; /* Горизонтальное выравнивание круга по центру */
     }
-
+}
 
         /* Общие стили для контейнеров */
         .container {
