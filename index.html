@@ -24,7 +24,7 @@
             top: 0;
             background: black;
             display: flex;
-            justify-content: space between;
+            justify-content: space-between;
             align-items: center;
             padding: 10px;
         }
@@ -36,30 +36,6 @@
             padding: 5px 10px;
             margin: 0 10px;
             border-radius: 5px;
-        }
-
-        .left-section {
-            width: 50%;
-            background: url('https://im.wampi.ru/2023/10/13/BEZ-NAZVANIY27_20231013124339.png') no-repeat;
-            background-size: contain;
-            padding-bottom: 50%;
-            position: relative;
-        }
-
-        .text-in-circle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #F70BF3;
-            text-align: center;
-        }
-
-        .centered-content {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         /* Стили для ссылок на статьи */
@@ -97,50 +73,19 @@
         .article-link:hover::after {
             opacity: 1; /* Появление описания при наведении */
         }
-
-        /* Медиа-запрос для десктопа (соотношение 9/16) */
-        @media (min-width: 768px) {
-            .container-first {
-                background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
-            }
-
-            .container-second {
-                background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
-            }
-        }
-
-        /* Медиа-запрос для мобильных (соотношение 16/9) */
-        @media (max-width: 767px) {
-            .container-first {
-                background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
-            }
-
-            .container-second {
-                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
-            }
-            .left-section {
-                width: 100%; /* Занимает всю ширину первого контейнера */
-                text-align: center; /* Выравнивание текста по центру */
-                background-image: none; /* Убираем фоновое изображение в мобильной версии */
-            }
-            .text-in-circle {
-                left: 0; /* Расположение текста в левом верхнем углу */
-                transform: none; /* Сброс трансформации */
-            }
-        }
     </style>
 </head>
 <body>
     <div class="sticky-header">
         <button class="button">Блог</button>
-        <button class "button">Уроки</button>
+        <button class="button">Уроки</button>
         <button class="button">Контакты</button>
     </div>
     <div class="container container-first">
         <div class="left-section">
             <div class="text-in-circle">
                 <h2>О нас</h2>
-                <p>Сначала ИИ, потом нейросети, названия разные, а суть одна. Но что это такое, мы понимаем лишь поверхностно. А хотите? Легко, нужно лишь понять что такое линейная регрессия, кластеризация… не понятно? О, сейчас я обьясню…</p>
+                <p>Сначала ИИ, потом нейросети, названия разные, а суть одна. Но что это такое, мы понимаем лишь поверхностно. А хотите? Легко, нужно лишь понять что такое линейная регрессия, кластеризация… не понятно? О, сейчас я объясню...</p>
             </div>
         </div>
     </div>
