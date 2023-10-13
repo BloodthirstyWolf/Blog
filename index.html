@@ -2,29 +2,11 @@
 <html>
 <head>
     <style>
+        /* Общие стили */
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
-        }
-
-        .container-first {
-            position: relative;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .container-first {
-            background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
-            background-size: cover;
-            height: 100vh;
-        }
-
-        .container-second {
-            background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
-            background-size: cover;
-            height: 100vh;
-            margin: 0; /* Убираем отрицательный отступ */
         }
 
         .sticky-header {
@@ -32,7 +14,7 @@
             top: 0;
             background: black;
             display: flex;
-            justify-content: space between;
+            justify-content: space-between;
             align-items: center;
             padding: 10px;
         }
@@ -79,6 +61,37 @@
             text-align: center;
             text-decoration: none;
         }
+
+        /* Медиа-запрос для мобильных устройств */
+        @media (max-width: 768px) {
+            .container-first {
+                background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+            }
+
+            .container-second {
+                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+            }
+        }
+
+        /* Общие стили для контейнеров */
+        .container {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container-first {
+            background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .container-second {
+            background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +100,7 @@
         <button class="button">Уроки</button>
         <button class="button">Контакты</button>
     </div>
-    <div class="container-first">
+    <div class="container container-first">
         <div class="left-section">
             <div class="text-in-circle">
                 <h2>О нас</h2>
@@ -95,7 +108,7 @@
             </div>
         </div>
     </div>
-    <div class="container-second">
+    <div class="container container-second">
         <div class="centered-content">
             <a href="#" class="article-link">Статья 1</a>
             <a href="#" class="article-link">Статья 2</a>
