@@ -36,34 +36,28 @@
         }
 
         .left-section {
-            background-image: url('https://im.wampi.ru/2023/10/13/BEZ-NAZVANIY27_20231013124339.png');
-            background-size: 50%;
-            width: 50%;
-            padding-top: 50%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .left-content {
-            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%; /* Занимает левую половину контейнера */
+            background: url('https://im.wampi.ru/2023/10/13/BEZ-NAZVANIY27_20231013124339.png') no-repeat;
+            background-size: contain; /* Масштабируем изображение чтобы вместить в блок */
+            border-radius: 50%; /* Создаем круглую форму */
+            padding: 20px;
             color: #F70BF3;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="left-section">
+            <h2>О нас</h2>
+            <p>Описание сайта</p>
+        </div>
         <div class="sticky-header">
             <button class="button">Кнопка 1</button>
             <button class="button">Кнопка 2</button>
             <button class="button">Кнопка 3</button>
-        </div>
-        <div class="left-section">
-            <div class="left-content">
-                <h2>О нас</h2>
-                <p>Описание сайта</p>
-            </div>
         </div>
         <!-- Здесь ваш контент блога -->
     </div>
