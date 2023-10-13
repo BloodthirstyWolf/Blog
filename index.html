@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название вашего блога</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .button {
+            background: none;
+            border: 2px solid #F70BF3;
+            color: #F70BF3;
+            padding: 5px 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <button class="header-button">Главная</button>
-            <button class="header-button">Категория 1</button>
-            <button class="header-button">Категория 2</button>
-        </nav>
-    </header>
-    <div class="about-container">
-    <img class="background-image" src="https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png">
-    <p class="about-text">О нас. Это блог, который предоставляет информацию о...</p>
-</div>
-
+    <div class="container">
+        <div class="sticky-header">
+            <button class="button">Кнопка 1</button>
+            <button class="button">Кнопка 2</button>
+            <button class="button">Кнопка 3</button>
+        </div>
+        <!-- Здесь ваш контент блога -->
+    </div>
 </body>
 </html>
