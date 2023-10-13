@@ -2,16 +2,16 @@
 <html>
 <head>
     <style>
-        body {
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
         }
 
         .container {
             height: 100vh;
-            background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
+            background: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
             position: relative;
             display: flex;
         }
@@ -36,28 +36,35 @@
         }
 
         .left-section {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%; /* Занимает левую половину контейнера */
+            width: 50%;
             background: url('https://im.wampi.ru/2023/10/13/BEZ-NAZVANIY27_20231013124339.png') no-repeat;
-            background-size: contain; /* Масштабируем изображение чтобы вместить в блок */
-            border-radius: 50%; /* Создаем круглую форму */
-            padding: 20px;
+            background-size: contain;
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        .text-in-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color: #F70BF3;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <div class="sticky-header">
+        <button class="button">Кнопка 1</button>
+        <button class="button">Кнопка 2</button>
+        <button class="button">Кнопка 3</button>
+    </div>
     <div class="container">
         <div class="left-section">
-            <h2>О нас</h2>
-            <p>Описание сайта</p>
-        </div>
-        <div class="sticky-header">
-            <button class="button">Кнопка 1</button>
-            <button class="button">Кнопка 2</button>
-            <button class="button">Кнопка 3</button>
+            <div class="text-in-circle">
+                <h2>О нас</h2>
+                <p> Сначала ИИ, потом нейросети, названия разные, а суть одна. Но что это такое, мы понимаем лишь поверхностно. А хотите? Легко, нужно лишь понять что такое линейная регрессия, кластеризация… не понятно? О, сейчас я обьясню….</p>
+            </div>
         </div>
         <!-- Здесь ваш контент блога -->
     </div>
