@@ -72,16 +72,28 @@
             text-decoration: none;
         }
 
-        /* Медиа-запрос для мобильных устройств */
-        @media (max-width: 524px) {
-            .container-first {
-                background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
-            }
+        /* Медиа-запрос для десктопа (соотношение 9/16) */
+@media (min-width: 768px) {
+    .container-first {
+        background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
+    }
 
-            .container-second {
-                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
-            }
-        }
+    .container-second {
+        background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
+    }
+}
+
+/* Медиа-запрос для мобильных (соотношение 16/9) */
+@media (max-width: 767px) {
+    .container-first {
+        background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+    }
+
+    .container-second {
+        background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+    }
+}
+
 
         /* Общие стили для контейнеров */
         .container {
@@ -91,13 +103,11 @@
         }
 
         .container-first {
-            background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
             background-size: cover;
             height: 100vh;
         }
 
         .container-second {
-            background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
             background-size: cover;
             height: 100vh;
             margin: 0;
