@@ -65,20 +65,34 @@
         }
 
         /* Стили для ссылок на статьи */
+        .container {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container-first {
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .container-second {
+            background-size: cover;
+            height: 100vh;
+        }
+
         .article-link {
-            display: inline-block;
-            align-items: center;
+            display: block;
             background: #111;
             color: #F70BF3;
             padding: 10px;
             border: 2px solid #F70BF3;
             border-radius: 5px;
-            margin: 10px;
+            margin: 10px auto;
             text-decoration: none;
             transition: background-color 0.2s, color 0.2s;
             transform: skew(-20deg);
             width: 150px;
-            height: 50px;
             text-align: center;
         }
 
@@ -92,33 +106,37 @@
         @media (min-width: 768px) {
             .container-first {
                 background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
-            }
-
-            .container-second {
-                background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
-            }
+            width: 50%;
         }
 
-        /* Медиа-запрос для мобильных (соотношение 16/9) */
-        @media (max-width: 767px) {
-            .container-first {
-                background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
-            }
-
-            .container-second {
-                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
-                padding-left: 0;
-                text-align: center;
-            }
-            .left-section {
-                width: 100%;
-            }
-            .text-in-circle {
-                left: 0;
-                transform: none;
-            }
+        .container-second {
+            background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
+            width: 50%;
         }
-    </style>
+    }
+
+    /* Медиа-запрос для мобильных (соотношение 16/9) */
+    @media (max-width: 767px) {
+        .container-first {
+            background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+            width: 100%;
+        }
+
+        .container-second {
+            background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+            width: 100%;
+        }
+
+        .left-section {
+            text-align: center;
+        }
+
+        .text-in-circle {
+            position: static;
+            transform: none;
+        }
+    }
+</style>
 </head>
 <body>
     <div class="sticky-header">
