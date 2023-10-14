@@ -108,6 +108,26 @@
     .left-section {
         display: none; /* Скрыть левую секцию */
     }
+    .container-first::before {
+        content: ""; /* Пустой контент */
+        background-image: url('URL-фото-из-третьей-секции'); /* Замените на URL фото из третьей секции */
+        background-size: cover; /* Сохранить обложку */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .container-first::after {
+        content: "Текст из третьей секции"; /* Замените на текст из третьей секции */
+        color: #F70BF3; /* Цвет текста */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
 
