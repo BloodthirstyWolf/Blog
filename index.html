@@ -97,31 +97,19 @@
 @media (max-width: 767px) {
     .container-first {
         background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+        background-size: cover; /* Сохранить обложку */
     }
 
     .container-second {
         background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+        background-size: cover; /* Сохранить обложку */
         padding-left: 0; /* Убрать левый отступ */
     }
     .left-section {
-        width: 100%; /* Занимает всю ширину первого контейнера */
-        text-align: center; /* Выравнивание текста по центру */
-    }
-    .text-in-circle {
-        left: 0; /* Расположение текста в левом верхнем углу */
-        transform: none; /* Сброс трансформации */
-    }
-
-    /* Добавьте следующие правила для background в медиа-запросе */
-    .container-first {
-        background-size: contain;
-        background-position: center; /* Центрировать изображение */
-    }
-    .container-second {
-        background-size: cover;
-        background-position: center; /* Центрировать изображение */
+        display: none; /* Скрыть левую секцию */
     }
 }
+
 
 
     
