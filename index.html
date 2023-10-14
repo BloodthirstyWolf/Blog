@@ -94,20 +94,33 @@
 }
 
 /* Медиа-запрос для мобильных (соотношение 16/9) */
+
 @media (max-width: 767px) {
     .container-first {
         background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
-        background-size: cover; /* Сохранить обложку */
+        background-size: cover;
+        padding-left: 0;
     }
+    .left-section {
+        display: none;
+    }
+    .text-in-circle, .left-section-text {
+        color: #F70BF3;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 
     .container-second {
         background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
         background-size: cover; /* Сохранить обложку */
         padding-left: 0; /* Убрать левый отступ */
     }
-    .left-section {
-        display: none; /* Скрыть левую секцию */
-    }
+ 
     .container-first::before {
         content: ""; /* Пустой контент */
         background-image: url('URL-фото-из-третьей-секции'); /* Замените на URL фото из третьей секции */
