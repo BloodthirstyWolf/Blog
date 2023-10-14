@@ -12,6 +12,7 @@
     <title>Ваш заголовок</title>
     <link rel="stylesheet" href="styles.css"> <!-- Замените на путь к вашему файлу стилей -->
     <style>
+        /* Ваши стили здесь... */
         /* Общие стили */
         html, body {
             height: 100%;
@@ -44,6 +45,7 @@
             background-size: contain;
             padding-bottom: 50%;
             position: relative;
+            text-align: center;
         }
 
         .text-in-circle {
@@ -63,88 +65,57 @@
         }
 
         /* Стили для ссылок на статьи */
-.article-link {
-    display: flex;
-    align-items: center;
-    background: #111; /* Цвет фона - темный */
-    color: #F70BF3; /* Цвет текста - фиолетовый */
-    padding: 10px; /* Внутренние отступы */
-    border: 2px solid #F70BF3; /* Граница - фиолетовая */
-    border-radius: 5px; /* Скругление углов */
-    margin: 10px; /* Внешние отступы между ссылками */
-    text-decoration: none; /* Убираем подчеркивание */
-    transition: background-color 0.2s, color 0.2s; /* Плавные переходы при наведении */
-}
+        .article-link {
+            display: inline-block;
+            align-items: center;
+            background: #111;
+            color: #F70BF3;
+            padding: 10px;
+            border: 2px solid #F70BF3;
+            border-radius: 5px;
+            margin: 10px;
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+            transform: skew(-20deg);
+            width: 150px;
+            height: 50px;
+        }
 
-.article-link:hover {
-    background: #F70BF3; /* Цвет фона при наведении - фиолетовый */
-    color: #111; /* Цвет текста при наведении - темный */
-}
-
+        .article-link:hover {
+            background: #F70BF3;
+            color: #111;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
 
         /* Медиа-запрос для десктопа (соотношение 9/16) */
-@media (min-width: 768px) {
-    .container-first {
-        background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
-    }
+        @media (min-width: 768px) {
+            .container-first {
+                background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
+            }
 
-    .container-second {
-        background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
-    }
-}
-
-/* Медиа-запрос для мобильных (соотношение 16/9) */
-@media (max-width: 767px) {
-    .container-first {
-        background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
-    }
-
-    .container-second {
-        background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
-        padding-left: 0; /* Убрать левый отступ */
-    }
-    .left-section {
-        width: 100%; /* Занимает всю ширину первого контейнера */
-        padding: 0; /* Убирает внутренние отступы */
-        text-align: center; /* Выравнивание текста по центру */
-    }
-    .text-in-circle {
-        left: 0; /* Расположение текста в левом верхнем углу */
-        transform: none; /* Сброс трансформации */
-    }
-
-    /* Добавьте следующие правила для background в медиа-запросе */
-    .container-first {
-        background-size: contain;
-        background-position: center; /* Центрировать изображение */
-    }
-    .container-second {
-        background-size: cover;
-        background-position: center; /* Центрировать изображение */
-    }
-}
-
-    
-    
-}
-
-
-        /* Общие стили для контейнеров */
-        .container {
-            position: relative;
-            width: 100%;
-            box-sizing: border-box;
+            .container-second {
+                background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
+            }
         }
 
-        .container-first {
-            background-size: cover;
-            height: 100vh;
-        }
+        /* Медиа-запрос для мобильных (соотношение 16/9) */
+        @media (max-width: 767px) {
+            .container-first {
+                background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+            }
 
-        .container-second {
-            background-size: cover;
-            height: 100vh;
-            margin: 0;
+            .container-second {
+                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+                padding-left: 0;
+            }
+            .left-section {
+                width: 100%;
+                text-align: center;
+            }
+            .text-in-circle {
+                left: 0;
+                transform: none;
+            }
         }
     </style>
 </head>
