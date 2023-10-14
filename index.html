@@ -82,6 +82,53 @@
 }
 
 
+        /* Медиа-запрос для десктопа (соотношение 9/16) */
+@media (min-width: 768px) {
+    .container-first {
+        background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
+    }
+
+    .container-second {
+        background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
+    }
+}
+
+/* Медиа-запрос для мобильных (соотношение 16/9) */
+@media (max-width: 767px) {
+    .container-first {
+        background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+    }
+
+    .container-second {
+        background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+        padding-left: 0; /* Убрать левый отступ */
+    }
+    .left-section {
+        width: 100%; /* Занимает всю ширину первого контейнера */
+        padding: 0; /* Убирает внутренние отступы */
+        text-align: center; /* Выравнивание текста по центру */
+    }
+    .text-in-circle {
+        left: 0; /* Расположение текста в левом верхнем углу */
+        transform: none; /* Сброс трансформации */
+    }
+
+    /* Добавьте следующие правила для background в медиа-запросе */
+    .container-first {
+        background-size: contain;
+        background-position: center; /* Центрировать изображение */
+    }
+    .container-second {
+        background-size: cover;
+        background-position: center; /* Центрировать изображение */
+    }
+}
+
+    
+    
+}
+
+
         /* Общие стили для контейнеров */
         .container {
             position: relative;
@@ -98,46 +145,6 @@
             background-size: cover;
             height: 100vh;
             margin: 0;
-        }
-
-          @media (min-width: 768px) {
-            .container-first {
-                background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
-                background-size: cover;
-                height: 100vh;
-                width: 50%; /* Занимает левую половину экрана */
-            }
-            .container-second {
-                background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
-                background-size: cover;
-                height: 100vh;
-                width: 50%; /* Занимает правую половину экрана */
-            }
-
-            .left-section {
-                display: block; /* Показываем левую секцию в декстопной версии */
-            }
-        }
-
-        /* Медиа-запрос для мобильных (соотношение 16/9) */
-        @media (max-width: 767px) {
-            .container-first {
-                background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
-                background-size: cover;
-                height: 100vh;
-                width: 100%; /* Занимает весь экран */
-            }
-
-            .container-second {
-                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
-                background-size: cover;
-                height: 100vh;
-                width: 100%; /* Занимает весь экран */
-            }
-
-            .left-section {
-                display: none; /* Скрываем левую секцию в мобильной версии */
-            }
         }
     </style>
 </head>
