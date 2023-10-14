@@ -48,11 +48,14 @@
 
         .text-in-circle {
             position: absolute;
-            top: 0;
-            left: 0;
-            transform: none;
-            padding: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color: #F70BF3;
+            text-align: center;
+            border-radius: 50%; /* Применяем скругление для создания круга */
+            background: rgba(0, 0, 0, 0.5); /* Фон с прозрачностью */
+            padding: 10px;
         }
 
         .centered-content {
@@ -87,7 +90,7 @@
 
         .article-links {
             display: flex;
-            flex-direction: column; /* Размещение в столбик */
+            flex-direction: column;
             align-items: center;
         }
 
