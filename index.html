@@ -1,44 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Описание вашего сайта для SEO">
-    <meta name="keywords" content="ключевые слова, через, запятую, для, SEO">
-    <meta property="og:title" content="Заголовок для Open Graph">
-    <meta property="og:description" content="Описание для Open Graph">
-    <meta property="og:image" content="URL к изображению для Open Graph">
-    <meta name="referrer" content="no-referrer">
-    <title>Ваш заголовок</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Замените на путь к вашему файлу стилей -->
     <style>
-        /* Общие стили */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            background: black;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .button {
-            background: none;
-            border: 2px solid #F70BF3;
-            color: #F70BF3;
-            padding: 5px 10px;
-            margin: 0 10px;
-            border-radius: 5px;
-        }
-
-        /* Стили для ссылок на статьи */
+        /* Стили для ссылок "статья 1" и "статья 2" */
         .article-link {
             display: inline-block;
             background: #111; /* Цвет фона - темный */
@@ -49,6 +13,7 @@
             border-bottom-left-radius: 30px; /* Скругление нижнего левого угла */
             text-decoration: none; /* Убираем подчеркивание */
             transition: background-color 0.2s, color 0.2s; /* Плавные переходы при наведении */
+            position: relative; /* Для позиционирования описания */
         }
 
         .article-link:hover {
@@ -76,24 +41,7 @@
     </style>
 </head>
 <body>
-    <div class="sticky-header">
-        <button class="button">Блог</button>
-        <button class="button">Уроки</button>
-        <button class="button">Контакты</button>
-    </div>
-    <div class="container container-first">
-        <div class="left-section">
-            <div class="text-in-circle">
-                <h2>О нас</h2>
-                <p>Сначала ИИ, потом нейросети, названия разные, а суть одна. Но что это такое, мы понимаем лишь поверхностно. А хотите? Легко, нужно лишь понять что такое линейная регрессия, кластеризация… не понятно? О, сейчас я объясню...</p>
-            </div>
-        </div>
-    </div>
-    <div class="container container-second">
-        <div class="centered-content">
-            <a href="#" class="article-link">Статья 1</a>
-            <a href="#" class="article-link">Статья 2</a>
-        </div>
-    </div>
+    <a href="#" class="article-link">Статья 1</a>
+    <a href="#" class="article-link">Статья 2</a>
 </body>
 </html>
