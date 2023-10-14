@@ -1,47 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Описание вашего сайта для SEO">
+    <meta name="keywords" content="ключевые слова, через, запятую, для, SEO">
+    <meta property="og:title" content="Заголовок для Open Graph">
+    <meta property="og:description" content="Описание для Open Graph">
+    <meta property="og:image" content="URL к изображению для Open Graph">
+    <meta name="referrer" content="no-referrer">
+    <title>Ваш заголовок</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Замените на путь к вашему файлу стилей -->
     <style>
-        /* Стили для ссылок "статья 1" и "статья 2" */
-        .article-link {
-            display: inline-block;
-            background: #111; /* Цвет фона - темный */
-            color: #F70BF3; /* Цвет текста - фиолетовый */
-            padding: 10px 20px; /* Внутренние отступы */
-            border: none; /* Убираем границу */
-            border-top-right-radius: 30px; /* Скругление верхнего правого угла */
-            border-bottom-left-radius: 30px; /* Скругление нижнего левого угла */
-            text-decoration: none; /* Убираем подчеркивание */
-            transition: background-color 0.2s, color 0.2s; /* Плавные переходы при наведении */
-            position: relative; /* Для позиционирования описания */
+        /* Общие стили */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
         }
 
-        .article-link:hover {
-            background: #F70BF3; /* Цвет фона при наведении - фиолетовый */
-            color: #111; /* Цвет текста при наведении - темный */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
         }
 
-        .article-link::after {
-            content: "Описание статьи"; /* Текст для описания */
-            background: #F70BF3; /* Розовый фон для описания */
-            color: white; /* Белый цвет текста описания */
-            padding: 10px; /* Внутренние отступы для описания */
+        .button {
+            background: none;
+            border: 2px solid #F70BF3;
+            color: #F70BF3;
+            padding: 5px 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+
+        .left-section {
+            width: 50%;
+            background: url('https://im.wampi.ru/2023/10/13/BEZ-NAZVANIY27_20231013124339.png') no-repeat;
+            background-size: contain;
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        .text-in-circle {
             position: absolute;
-            top: 100%; /* Расположение описания под ссылкой */
-            left: 50%; /* Горизонтальное выравнивание описания по центру */
-            transform: translateX(-50%); /* Сдвиг описания на половину ширины влево */
-            border-radius: 5px; /* Скругление углов для описания */
-            opacity: 0; /* Изначально описание скрыто */
-            transition: opacity 0.2s; /* Плавный переход для появления описания */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #F70BF3;
+            text-align: center;
         }
 
-        .article-link:hover::after {
-            opacity: 1; /* Появление описания при наведении */
+        .centered-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Стили для ссылок на статьи */
+.article-link {
+    display: flex;
+    align-items: center;
+    background: #111; /* Цвет фона - темный */
+    color: #F70BF3; /* Цвет текста - фиолетовый */
+    padding: 10px; /* Внутренние отступы */
+    border: 2px solid #F70BF3; /* Граница - фиолетовая */
+    border-radius: 5px; /* Скругление углов */
+    margin: 10px; /* Внешние отступы между ссылками */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.2s, color 0.2s; /* Плавные переходы при наведении */
+}
+
+.article-link:hover {
+    background: #F70BF3; /* Цвет фона при наведении - фиолетовый */
+    color: #111; /* Цвет текста при наведении - темный */
+}
+
+
+        /* Медиа-запрос для десктопа (соотношение 9/16) */
+@media (min-width: 768px) {
+    .container-first {
+        background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
+    }
+
+    .container-second {
+        background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
+    }
+}
+
+/* Медиа-запрос для мобильных (соотношение 16/9) */
+@media (max-width: 767px) {
+    .container-first {
+        background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+    }
+
+    .container-second {
+        background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+        padding-left: 0; /* Убрать левый отступ */
+    }
+    .left-section {
+        width: 100%; /* Занимает всю ширину первого контейнера */
+        text-align: center; /* Выравнивание текста по центру */
+    }
+    .text-in-circle {
+        left: 0; /* Расположение текста в левом верхнем углу */
+        transform: none; /* Сброс трансформации */
+    }
+}
+    
+    
+}
+
+
+        /* Общие стили для контейнеров */
+        .container {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container-first {
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .container-second {
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <a href="#" class="article-link">Статья 1</a>
-    <a href="#" class="article-link">Статья 2</a>
+    <div class="sticky-header">
+        <button class="button">Блог</button>
+        <button class="button">Уроки</button>
+        <button class="button">Контакты</button>
+    </div>
+    <div class="container container-first">
+        <div class="left-section">
+            <div class="text-in-circle">
+                <h2>О нас</h2>
+                <p>Сначала ИИ, потом нейросети, названия разные, а суть одна. Но что это такое, мы понимаем лишь поверхностно. А хотите? Легко, нужно лишь понять что такое линейная регрессия, кластеризация… не понятно? О, сейчас я обьясню…</p>
+            </div>
+        </div>
+    </div>
+    <div class="container container-second">
+        <div class="centered-content">
+            <a href="#" class="article-link">Статья 1</a>
+            <a href="#" class="article-link">Статья 2</a>
+        </div>
+    </div>
 </body>
 </html>
