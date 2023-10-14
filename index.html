@@ -12,7 +12,6 @@
     <title>Ваш заголовок</title>
     <link rel="stylesheet" href="styles.css"> <!-- Замените на путь к вашему файлу стилей -->
     <style>
-        /* Ваши стили здесь... */
         /* Общие стили */
         html, body {
             height: 100%;
@@ -45,16 +44,14 @@
             background-size: contain;
             padding-bottom: 50%;
             position: relative;
-            text-align: center;
         }
 
         .text-in-circle {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #F70BF3;
-            text-align: center;
+            top: 0;
+            left: 0;
+            transform: none;
+            padding: 10px;
         }
 
         .centered-content {
@@ -65,38 +62,20 @@
         }
 
         /* Стили для ссылок на статьи */
-        .container {
-            position: relative;
-            width: 100%;
-            box-sizing: border-box;
-            background-size: cover;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container-first {
-            background-size: cover;
-            height: 100vh;
-        }
-
-        .container-second {
-            background-size: cover;
-            height: 100vh;
-        }
-
         .article-link {
-            display: block;
+            display: inline-block;
+            align-items: center;
             background: #111;
             color: #F70BF3;
             padding: 10px;
             border: 2px solid #F70BF3;
             border-radius: 5px;
-            margin: 10px auto;
+            margin: 10px;
             text-decoration: none;
             transition: background-color 0.2s, color 0.2s;
             transform: skew(-20deg);
             width: 150px;
-            text-align: center;
+            height: 50px;
         }
 
         .article-link:hover {
@@ -109,27 +88,42 @@
         @media (min-width: 768px) {
             .container-first {
                 background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
-            width: 50%;
+            }
+
+            .container-second {
+                background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
+            }
         }
 
-        .container-second {
-            background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
-            width: 50%;
-        }
-    }
+        /* Медиа-запрос для мобильных (соотношение 16/9) */
+        @media (max-width: 767px) {
+            .container-first {
+                background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+            }
 
-    /* Медиа-запрос для мобильных (соотношение 16/9) */
-    @media (max-width: 767px) {
-        .container-first {
-            background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
-            width: 100%;
+            .container-second {
+                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+                padding-left: 0;
+            }
+            .left-section {
+                width: 100%;
+                text-align: center;
+            }
+            .text-in-circle {
+                top: 0;
+                left: 0;
+                transform: none;
+                padding: 10px;
+            }
+            .container-first {
+                background-size: contain;
+                background-position: center;
+            }
+            .container-second {
+                background-size: cover;
+                background-position: center;
+            }
         }
-
-        .container-second {
-            background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
-            width: 100%;
-        }
-    }
     </style>
 </head>
 <body>
@@ -148,8 +142,8 @@
     </div>
     <div class="container container-second">
         <div class="centered-content">
-            <a href="#" class="article-link">Статья 1</a>
-            <a href="#" class="article-link">Статья 2</a>
+            <a href="#" class="article-link">Уроки</a>
+            <a href="#" class="article-link">Блог</a>
         </div>
     </div>
 </body>
