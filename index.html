@@ -48,13 +48,9 @@
 
         .text-in-circle {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #F70BF3;
-            text-align: center;
-            border-radius: 50%; /* Применяем скругление для создания круга */
-            background: rgba(0, 0, 0, 0.5); /* Фон с прозрачностью */
+            top: 0;
+            left: 0;
+            transform: none;
             padding: 10px;
         }
 
@@ -88,27 +84,44 @@
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .article-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
         /* Медиа-запрос для десктопа (соотношение 9/16) */
         @media (min-width: 768px) {
-            .container-first,
+            .container-first {
+                background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
+            }
+
             .container-second {
-                background-size: cover;
-                height: 100vh;
+                background-image: url('https://ie.wampi.ru/2023/10/13/IMG_20231013_162054.png');
             }
         }
 
         /* Медиа-запрос для мобильных (соотношение 16/9) */
         @media (max-width: 767px) {
-            .container-first,
+            .container-first {
+                background-image: url('https://i.postimg.cc/bdcBjpSw/IMG-20231013-163006.png');
+            }
+
+            .container-second {
+                background-image: url('https://i.postimg.cc/HsrmRCPb/IMG-20231013-195329.png');
+                padding-left: 0;
+            }
+            .left-section {
+                width: 100%;
+                text-align: center;
+            }
+            .text-in-circle {
+                top: 0;
+                left: 0;
+                transform: none;
+                padding: 10px;
+            }
+            .container-first {
+                background-size: contain;
+                background-position: center;
+            }
             .container-second {
                 background-size: cover;
-                height: 100vh;
+                background-position: center;
             }
         }
     </style>
@@ -129,10 +142,8 @@
     </div>
     <div class="container container-second">
         <div class="centered-content">
-            <div class="article-links">
-                <a href="#" class="article-link">Статья 1</a>
-                <a href="#" class="article-link">Статья 2</a>
-            </div>
+            <a href="#" class="article-link">Статья 1</a>
+            <a href="#" class="article-link">Статья 2</a>
         </div>
     </div>
 </body>
