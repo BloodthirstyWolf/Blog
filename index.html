@@ -82,7 +82,25 @@
 }
 
 
-       @media (min-width: 768px) {
+        /* Общие стили для контейнеров */
+        .container {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container-first {
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .container-second {
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+        }
+
+          @media (min-width: 768px) {
             .container-first {
                 background-image: url('https://i.postimg.cc/2SmwTJvf/IMG-20231012-213647.png');
                 background-size: cover;
@@ -94,6 +112,10 @@
                 background-size: cover;
                 height: 100vh;
                 width: 50%; /* Занимает правую половину экрана */
+            }
+
+            .left-section {
+                display: block; /* Показываем левую секцию в декстопной версии */
             }
         }
 
@@ -114,26 +136,8 @@
             }
 
             .left-section {
-                display: none;
+                display: none; /* Скрываем левую секцию в мобильной версии */
             }
-        }
-
-        /* Общие стили для контейнеров */
-        .container {
-            position: relative;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .container-first {
-            background-size: cover;
-            height: 100vh;
-        }
-
-        .container-second {
-            background-size: cover;
-            height: 100vh;
-            margin: 0;
         }
     </style>
 </head>
