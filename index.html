@@ -126,21 +126,21 @@
                 padding-left: 0;
             }
             .left-section {
-            width: 100%;
-            background: url('https://i.postimg.cc/PxmkdPp1/27-20231013161544.png') no-repeat;
-            background-size: contain;
+        width: 100%;
+        background-position: center; /* Центрировать изображение */
+        background-size: cover; /* Растягивать изображение на всю ширину */
             }
             
         .text-in-circle {
     position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%; /* Расположение по центру вертикально */
+    left: 50%; /* Расположение по центру горизонтально */
+    transform: translate(-50%, -50%); /* Центрирование относительно себя */
     color: #F70BF3;
     text-align: center;
-    border-radius: 50%; /* Зададим скругленные углы для круглой формы */
-    padding: 20px; /* Подправим отступы по вашему желанию */
-        }
+    border-radius: 50%; /* Задаем круглую форму */
+    padding: 20px;
+}
         
             .container-first {
                 background-size: contain;
