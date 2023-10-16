@@ -67,7 +67,7 @@
 
         /* Стили для ссылок на статьи */
         .article-link {
-    display: block; /* Сделаем их блочными элементами */
+    display: block;
     align-items: center;
     background: #111;
     color: #F70BF3;
@@ -80,8 +80,13 @@
     transform: skew(-20deg);
     width: 150px;
     height: 50px;
-    margin-bottom: 10px; /* Добавляем отступ снизу для вертикального расположения */
 }
+
+/* Добавьте margin-top для разделения ссылок вертикально */
+.article-link + .article-link {
+    margin-top: 10px;
+}
+
 
 
         .article-link:hover {
