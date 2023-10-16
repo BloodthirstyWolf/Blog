@@ -67,22 +67,22 @@
 
         /* Стили для ссылок на статьи */
         .article-link {
-            display: inline-block;
-            align-items: center;
-            background: #111;
-            color: #F70BF3;
-            padding: 10px;
-            border: 2px solid #F70BF3;
-            border-radius: 5px;
-            margin: 10px;
-            text-decoration: none;
-            transition: background-color 0.2s, color 0.2s;
-            transform: skew(-20deg);
-            width: 150px;
-            height: 50px;
-            display: block
-            clear: both;
-        }
+    display: block; /* Сделаем их блочными элементами */
+    align-items: center;
+    background: #111;
+    color: #F70BF3;
+    padding: 10px;
+    border: 2px solid #F70BF3;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    transform: skew(-20deg);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px; /* Добавляем отступ снизу для вертикального расположения */
+}
+
 
         .article-link:hover {
             background: #F70BF3;
