@@ -1,0 +1,35 @@
+body {
+  background-color: #000000;
+  color: #F70BF3;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.blog-column {
+  background-color: #F70BF3;
+  padding: 20px;
+  text-align: center;
+}
+
+.blog-column img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-column {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog-column {
+    width: 33.33%;
+  }
+}
