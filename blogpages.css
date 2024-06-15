@@ -1,0 +1,108 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Хедер */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+  border-bottom: 2px solid #F40EF5;
+}
+
+.header .nav a {
+  color: #F40EF5;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+.header .nav a:last-child {
+  margin-right: 0;
+}
+
+/* Поисковое поле */
+.search-container {
+  position: relative;
+  flex: 1;
+  max-width: 10%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 5px 10px 5px 30px;
+  border: 2px solid #F40EF5;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #F40EF5;
+  pointer-events: none;
+}
+
+/* Адаптивность для поиска */
+@media only screen and (max-width: 480px) {
+  .search-container {
+    max-width: 20%;
+  }
+}
+
+/* Общие стили для статьи */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.article h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Фоновое изображение, которое повторяется */
+body {
+  background-image: url('background-image.jpg');
+  background-repeat: repeat-y; /* Повтор по вертикали */
+  background-size: 100% auto; /* 100% ширина, автоматическая высота */
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media only screen and (min-width: 480px) {
+  .article {
+    width: 30%; /* Колонна занимает 30% экрана на десктопах */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .article {
+    width: 80%; /* Колонна занимает 80% экрана на мобильных устройствах */
+  }
+}
