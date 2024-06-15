@@ -96,7 +96,7 @@ body {
 
 /* Фоновое изображение, которое повторяется */
 body {
-  background-image: url('background-image.jpg');
+  background-image: url('background-image.png');
   background-repeat: repeat-y; /* Повтор по вертикали */
   background-size: 100% auto; /* 100% ширина, автоматическая высота */
 }
