@@ -1,21 +1,24 @@
 /* Подключаем шрифт */
 @import url('https://fonts.googleapis.com/css2?family=Game+Station+Condensed&display=swap');
 
-  /* Общие стили */
+/* Общие стили */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-image: url('background.jpg'); /* Замените на путь к вашему изображению */
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-color: #111; /* Цвет фона страницы */
+    color: #F40EF5; /* Фиолетовый цвет текста */
 }
 
 .container {
     width: 80%; /* Ширина контента в мобильной версии */
     margin: 0 auto;
     padding: 3vw; /* Отступы в процентах от ширины viewport */
-    background-color: rgba(255, 255, 255, 0.8); /* Чтобы текст был читаемым на фоне */
+    background-color: rgba(0, 0, 0, 0.8); /* Чтобы текст был читаемым на фоне */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для контейнера */
 }
 
 /* Стили для хедера */
@@ -26,6 +29,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; /* Сделаем хедер фиксированным */
+    top: 0; /* Закрепляем его вверху страницы */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1000; /* Выше других элементов на странице */
 }
 
 .header a {
@@ -53,15 +60,17 @@ body {
 
 /* Стили для основного контента */
 article {
-    background-color: rgba(255, 255, 255, 0.9); /* Чтобы текст был читаемым на фоне */
-    padding: 3vw; /* Отступы в процентах от ширины viewport */
-    margin-top: 3vh; /* Отступ в процентах от высоты viewport */
+    padding: 10vh 3vw; /* Отступы в процентах от высоты и ширины viewport */
     color: #F40EF5; /* Фиолетовый цвет текста */
 }
 
 @media (min-width: 769px) {
     .container {
-        width: 30%; /* Ширина контента в десктопной версии */
+        width: 60%; /* Ширина контента в десктопной версии */
+    }
+
+    .header {
+        padding: 1vh 3vw; /* Уменьшим отступы для хедера на больших экранах */
     }
 }
 
