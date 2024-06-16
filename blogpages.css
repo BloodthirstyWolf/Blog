@@ -1,115 +1,77 @@
 /* Подключаем шрифт */
 @import url('https://fonts.googleapis.com/css2?family=Game+Station+Condensed&display=swap');
 
-/* Общие стили */
+  /* Общие стили */
 body {
-  font-family: 'Game Station Condensed', sans-serif;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Замените на путь к вашему изображению */
+    background-size: cover;
+    background-repeat: repeat-y;
 }
 
-/* Хедер */
+.container {
+    width: 80%; /* Ширина контента в мобильной версии */
+    margin: 0 auto;
+    padding: 3vw; /* Отступы в процентах от ширины viewport */
+    background-color: rgba(255, 255, 255, 0.8); /* Чтобы текст был читаемым на фоне */
+}
+
+/* Стили для хедера */
 .header {
-  position: sticky;
-  top: 0;
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  z-index: 1000;
-  border-bottom: 2px solid #F40EF5;
+    background-color: #000;
+    padding: 2vh 3vw; /* Отступы в процентах от высоты и ширины viewport */
+    color: #F40EF5; /* Фиолетовый цвет текста */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+.header a {
+    color: #F40EF5; /* Фиолетовый цвет для ссылок */
+    text-decoration: none;
+    margin-right: 3vw; /* Отступ в процентах от ширины viewport */
 }
 
-.header .nav a {
-  color: #F40EF5;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 1rem;
-}
-
-.header .search-container {
-  flex: 0 1 auto;
-  max-width: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.search-container {
+    display: flex;
+    align-items: center;
 }
 
 .search-input {
-  width: 100%;
-  padding: 5px 10px 5px 30px;
-  border: 2px solid #F40EF5;
-  border-radius: 50px;
-  background-color: black;
-  color: white;
+    padding: 1vh 2vw; /* Отступы в процентах от высоты и ширины viewport */
+    border: 2px solid #F40EF5; /* Фиолетовая рамка */
+    border-radius: 2vw; /* Скругление углов в процентах от ширины viewport */
+    margin-right: 3vw; /* Отступ в процентах от ширины viewport */
+    width: 20vw; /* Ширина поля ввода в процентах от ширины viewport */
 }
 
 .search-icon {
-  position: absolute;
-  left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #F40EF5;
-  pointer-events: none;
+    fill: #F40EF5; /* Цвет иконки поиска */
 }
 
-/* Адаптивность для поиска */
-@media only screen and (max-width: 480px) {
-  .search-container {
-    max-width: 20%;
-  }
+/* Стили для основного контента */
+article {
+    background-color: rgba(255, 255, 255, 0.9); /* Чтобы текст был читаемым на фоне */
+    padding: 3vw; /* Отступы в процентах от ширины viewport */
+    margin-top: 3vh; /* Отступ в процентах от высоты viewport */
+    color: #F40EF5; /* Фиолетовый цвет текста */
 }
 
-/* Общие стили для статьи */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+@media (min-width: 769px) {
+    .container {
+        width: 30%; /* Ширина контента в десктопной версии */
+    }
 }
 
-.article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 40px;
-}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.article h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.article p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-/* Фоновое изображение, которое повторяется */
-body {
-  background-image: url('background-image.png');
-  background-repeat: repeat-y; /* Повтор по вертикали */
-  background-size: 100% auto; /* 100% ширина, автоматическая высота */
-}
-
-/* Медиа-запросы для адаптивного дизайна */
-@media only screen and (min-width: 480px) {
-  .article {
-    width: 30%; /* Колонна занимает 30% экрана на десктопах */
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .article {
-    width: 80%; /* Колонна занимает 80% экрана на мобильных устройствах */
-  }
+    .search-input {
+        width: 80%; /* Ширина поля ввода в мобильной версии */
+    }
 }
