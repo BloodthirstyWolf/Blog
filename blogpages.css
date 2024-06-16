@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Game Station Condensed', Arial, sans-serif; /* Используем шрифт Game Station Condensed */
-    background-image: url('background.jpg'); /* Замените на путь к вашему изображению */
+    background-image: url('background.png'); /* Замените на путь к вашему изображению */
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #111; /* Цвет фона страницы */
