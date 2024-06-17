@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Game Station Condensed', Arial, sans-serif; /* Используем шрифт Game Station Condensed */
-    background-image: url('background.jpg'); /* Замените на путь к вашему изображению */
+    background-image: url('background_image'); /* Замените на путь к вашему изображению */
     background-size: 100% auto; /* Занимает 100% по горизонтали и автоматический размер по высоте */
     background-repeat: repeat-y; /* Повторять изображение только по вертикали */
     color: #F40EF5; /* Фиолетовый цвет текста */
