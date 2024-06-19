@@ -18,21 +18,24 @@ body {
 /* Стили для хедера */
 .header {
     background-color: #000;
-    padding: 2vh 3vw; /* Отступы в процентах от высоты и ширины viewport */
-    color: #F40EF5; /* Фиолетовый цвет текста */
+    padding: 2vh 3vw;
+    color: #F40EF5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Сделаем хедер фиксированным */
-    top: 0; /* Закрепляем его вверху страницы */
-    width: 100%; /* Ширина на всю ширину экрана */
-    z-index: 1000; /* Выше других элементов на странице */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center; /* Центрируем содержимое */
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрируем по горизонтали */
 }
 
 .header a {
-    color: #F40EF5; /* Фиолетовый цвет для ссылок */
+    color: #F40EF5;
     text-decoration: none;
-    margin-right: 3vw; /* Отступ в процентах от ширины viewport */
+    margin-right: 3vw;
 }
 
 .search-container {
@@ -41,31 +44,15 @@ body {
 }
 
 .search-input {
-    padding: 1vh 2vw; /* Отступы в процентах от высоты и ширины viewport */
-    border: 2px solid #F40EF5; /* Фиолетовая рамка */
-    border-radius: 2vw; /* Скругление углов в процентах от ширины viewport */
-    margin-right: 3vw; /* Отступ в процентах от ширины viewport */
-    width: 20vw; /* Ширина поля ввода в процентах от ширины viewport */
+    padding: 1vh 2vw;
+    border: 2px solid #F40EF5;
+    border-radius: 2vw;
+    margin-right: 3vw;
+    width: 20vw;
 }
 
 .search-icon {
-    fill: #F40EF5; /* Цвет иконки поиска */
-}
-
-/* Стили для основного контента */
-article {
-    padding: 10vh 3vw; /* Отступы в процентах от высоты и ширины viewport */
-    color: #F40EF5; /* Фиолетовый цвет текста */
-}
-
-@media (min-width: 769px) {
-    .container {
-        width: 60%; /* Ширина контента в десктопной версии */
-    }
-
-    .header {
-        padding: 1vh 3vw; /* Уменьшим отступы для хедера на больших экранах */
-    }
+    fill: #F40EF5;
 }
 
 @media (max-width: 768px) {
@@ -75,6 +62,12 @@ article {
     }
 
     .search-input {
-        width: 80%; /* Ширина поля ввода в мобильной версии */
+        width: 30%;
+    }
+}
+
+@media (min-width: 769px) {
+    .header {
+        padding: 1vh 3vw;
     }
 }
