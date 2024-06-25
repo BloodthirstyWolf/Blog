@@ -55,6 +55,36 @@ body {
     fill: #F40EF5;
 }
 
+/* Стили заголовков */
+h1, h2, h3, h4, h5, h6 {
+    color: #F40EF5; /* Цвет заголовков */
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -63,6 +93,13 @@ body {
 
     .search-input {
         width: 30%;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 }
 
