@@ -89,8 +89,11 @@ h3 {
     }
 }
 
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
     .header {
         padding: 1vh 3vw;
     }
+  img {
+        width: 30%;
+  }
 }
